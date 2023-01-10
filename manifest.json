@@ -1,0 +1,19 @@
+{
+    "manifest_version": 1,
+    "name": "BetterMoTheme",
+    "preview": "preview.png",
+    "description": "BetterNCM插件，主题插件，用于美化网易云音乐（GuaiJie魔改）",
+    "version": "1.1.10",
+    "author": "GuaiJie",
+    "type": "theme",
+    "requirements": [
+        "StylesheetLoader"
+    ],
+    "injects": {
+        "Main": [
+            {
+                "file": "main.js"
+            }
+        ]
+    }
+}
