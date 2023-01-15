@@ -516,7 +516,8 @@ body:not(.BetterMoTheme-use_refinedNowPlaying) .g-singlec-comment-top.z-show {
 }
 
 
-.g-singlec-ct {
+.g-singlec-ct,
+section {
     scroll-behavior: smooth!important;
 }
 
