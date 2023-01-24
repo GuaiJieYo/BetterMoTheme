@@ -164,7 +164,6 @@ header::after {
     margin: 10px;
     border-radius: var(--BetterMoTheme-bottomMusicBar_radius);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* border: 1px solid rgba(255, 255, 255, 0.2) !important; */
 }
 
 .m-player {
@@ -180,7 +179,6 @@ header::after {
     box-shadow: unset !important;
     border: unset !important;
     background: unset !important;
-    backdrop-filter: unset !important;
 }
 
 .m-player * {
