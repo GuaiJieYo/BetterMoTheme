@@ -1,0 +1,15 @@
+name: 打包成Plugin
+run-name: 构建状态:${{ job.status }}
+on:
+  watch:
+    types: [started]
+jobs:
+  Setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: 构建
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
