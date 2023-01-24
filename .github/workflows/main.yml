@@ -14,5 +14,6 @@ jobs:
           ls ${{ github.workspace }}
       - run: |
           echo "打包状态 ${{ job.status }}."
+      - run: |
           echo "date=date +%Y-%m-%d" >> $GITHUB_ENV
-     
+          echo "${{ env.date }}"
