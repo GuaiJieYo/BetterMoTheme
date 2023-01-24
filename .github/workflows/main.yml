@@ -8,7 +8,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: 构建
+      - name: 打包
         run: |
+          tar czvf BetterMoTheme.plugin *
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "打包状态 ${{ job.status }}."
