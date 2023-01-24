@@ -1,5 +1,4 @@
 name: 打包成Plugin
-run-name: 构建状态:${{ job.status }}
 on:
   watch:
     types: [started]
