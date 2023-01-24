@@ -12,14 +12,7 @@ jobs:
         run: |
           tar czvf BetterMoTheme.plugin *
           ls ${{ github.workspace }}
-      - run: echo "打包状态 ${{ job.status }}."
-      - name: releases
-        uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "date +%Y-%m-%d"
-          title: "date +%Y-%m-%d"
-          prerelease: false
-          files: |
-            BetterMoTheme.plugin
-
+      - run: |
+          echo "打包状态 ${{ job.status }}."
+          echo "date=date +%Y-%m-%d" >> $GITHUB_ENV
+     
